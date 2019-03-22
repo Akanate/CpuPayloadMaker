@@ -1,6 +1,9 @@
 import sys,os,webbrowser,subprocess,time
 
 def main():
+    print("The author is not responsible for any damage or harm caused by the usage of this software. Recommended usage in a Virtual Environment.")
+    print("Starting")
+    time.sleep(5)
     choice = input("""
     1.Webcrasher will make loads of tabs open and overload the cpu.(any platform)
     2.CMD opener this will spam open cmd therefore crashing their computer.(windows only)
